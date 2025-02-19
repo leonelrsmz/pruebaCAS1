@@ -4,11 +4,7 @@ from pylti.flask import LTI
 
 from flask import Flask, request
 
-"""
 
-
-
-"""
 
 st.image("Resources/Banner CAS.jpg")
 
