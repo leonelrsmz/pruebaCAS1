@@ -4,36 +4,11 @@ from pylti.flask import LTI
 
 from flask import Flask, request
 
+"""
 
 
-app = Flask(__name__)
 
-# Configuración LTI
-CONSUMER_KEY = "caspruebaclave"
-SHARED_SECRET = "caspruebasecret"
-
-# Inicializar LTI
-lti = LTI(
-    consumer_key=CONSUMER_KEY,
-    shared_secret=SHARED_SECRET
-)
-
-@app.route("/launch", methods=["POST"])
-def launch():
-    if lti.verify_request(request):
-        # Obtener información del usuario
-        user_id = lti.user_id
-        user_name = lti.user_full_name
-
-        # Mostrar la aplicación
-        return f"<h1>Aplicación Python integrada con Moodle</h1><p>Bienvenido, {user_name} (ID: {user_id})</p>"
-    else:
-        return "Error: Solicitud LTI inválida."
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
-
+"""
 
 st.image("Resources/Banner CAS.jpg")
 
