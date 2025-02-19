@@ -4,13 +4,13 @@ from pylti.flask import LTI
 
 from flask import Flask, request
 
-"""
+
 
 app = Flask(__name__)
 
 # Configuración LTI
-CONSUMER_KEY = "tu_clave_de_consumidor"
-SHARED_SECRET = "tu_secreto_compartido"
+CONSUMER_KEY = "caspruebaclave"
+SHARED_SECRET = "caspruebasecret"
 
 # Inicializar LTI
 lti = LTI(
@@ -33,7 +33,7 @@ def launch():
 if __name__ == "__main__":
     app.run(debug=True)
 
-"""
+
 
 st.image("Resources/Banner CAS.jpg")
 
